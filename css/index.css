@@ -1,0 +1,45 @@
+.logo {
+    display: inline-block;
+    float: left;
+}
+.yellow-logo {
+    color: #f7c702;
+}
+.black-logo {
+    color: black;
+}
+h1 {
+    color: #f7c702;
+    text-align: justify;
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+#col1, #col2, #col3, #col4 {
+    background-color: #f7c702;
+    text-align: center;
+    width: 120px;
+    min-width: 120px;
+    font-weight: bold;
+}
+.product-card {
+    background-color: #3a3031;
+    color: white;
+    text-align: justify;
+}
+#destinations {
+    color: white;
+}
+body {
+  background-color: lightgrey;
+}
+.leftimg {
+    float: left; 
+    margin: 7px 0 7px 7px; 
+   }
