@@ -1,7 +1,18 @@
-.logo {
-    display: inline-block;
-    float: left;
+html, body {
+  height: 100%;
 }
+
+header {
+    background-image: url("/img/elephant.png");
+    background-size: cover;
+    background:  url("/img/elephant.png") no-repeat center /cover#3a3031;
+    background-blend-mode: hard-light;
+    height: 100%;
+    text-align: justify;
+    line-height: 1;
+    font-family: Rubik,sans-serif;
+}
+
 .yellow-logo {
     color: #f7c702;
 }
@@ -36,10 +47,4 @@ table.center {
 #destinations {
     color: white;
 }
-body {
-  background-color: lightgrey;
-}
-.leftimg {
-    float: left; 
-    margin: 7px 0 7px 7px; 
-   }
+
