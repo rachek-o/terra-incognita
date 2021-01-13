@@ -17,7 +17,6 @@ html, body {
 }
 
 header {
-     display: grid;
 background-image: url("/img/elephant.png");
 background-size: cover;
 background: url("/img/elephant.png") no-repeat center /cover rgba(0, 0, 0, 0.47);
