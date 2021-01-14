@@ -23,9 +23,9 @@ html, body {
 }
 
 header {
-background-image: url("./img/elephant.png");
+background-image: url("../img/elephant.png");
 background-size: cover;
-background: url("./img/elephant.png") no-repeat center /cover rgba(0, 0, 0, 0.47);
+background: url("../img/elephant.png") no-repeat center /cover rgba(0, 0, 0, 0.47);
 background-blend-mode: color-dodge;
 height: 100%;
 display:flex;
