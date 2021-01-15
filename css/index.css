@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@media screen and (min-width: 750px) {
+
 :root {
-    --max-input-width: 1400px;
-    font-family: 'Rubik', sans-serif;
-    scroll-behavior: smooth;
-}
+    max-width: 1400px;
+    margin: 0;
+    border: 0;
+
 }
 html, body {
-    max-width: var(--max-input-width);
     display:block;
     height: 100%;
-    margin: auto;
+    margin: 0;
 }
+
 .container {
     width: 800px;
 	max-width: 100%;
-	margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,30 +22,33 @@ html, body {
 }
 
 header {
-background-image: url("../img/elephant.png");
-background-size: cover;
-background: url("../img/elephant.png") no-repeat center /cover rgba(0, 0, 0, 0.47);
+background: url("../img/elephant.png") no-repeat center / cover rgba(0, 0, 0, 0.47);
 background-blend-mode: color-dodge;
+background-attachment: scroll;
+background-position: 0px 0px;
 height: 100%;
-display:flex;
+width: 100%;
 flex-direction: column;
 cursor: default;
 line-height: 1;
-font-family: 'Rubik', sans-serif;;
-padding-top: 30px;
+font-family: 'Rubik', sans-serif;
+margin: 0 auto;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 32px;
+padding-right: 32px;
 align-items: center;
 justify-content: space-between;
 }
 
 .logo {
     max-width: 100%;
-    hei
     position: relative;
     margin: auto;
 	height: auto;
     display: flex;
     cursor: pointer;
-    padding-top: 30px;
+    padding-top: 24px;
     padding-bottom: 30px;
     color: #f7c702;
     font-family: 'Rubik', sans-serif;
@@ -68,7 +70,7 @@ justify-content: space-between;
 }
 
 header .menu {
-    display: none;
+    display: block;
 }
 
 header input:checked ~ .menu {
@@ -80,10 +82,14 @@ header .menu {
 }
 
 header .menu a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 500;
     color: white;
-    text-align: right;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 header .menu a:hover {
@@ -107,12 +113,17 @@ header .menu a:hover {
         justify-content: space-around;
         flex: 1;
     }
-
+}
 header .banner h1 {
     color: #f7c702;
-    font-size: 3.5rem;
+    font-size: 58px;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
+    line-height: 63.8px;
+    text-align: left;
+    padding-top: 140px;
+    padding-bottom: 30px;
 }
 
 a.button {
@@ -157,4 +168,3 @@ table.center {
 #destinations {
     color: white;
 }
-
