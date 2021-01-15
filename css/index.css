@@ -14,7 +14,7 @@ html, body {
 
 .container {
     width: 800px;
-	max-width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,7 +41,11 @@ align-items: center;
 justify-content: space-between;
 }
 
-.logo {
+.navbar-default {
+  background: none;
+}
+
+.navbar-brand {
     max-width: 100%;
     position: relative;
     margin: auto;
@@ -56,64 +60,14 @@ justify-content: space-between;
     font-weight: 500;
     text-transform: capitalize;
     text-align: left;
+    text-decoration: none; 
+
 }
+
 .selected {
     font-weight: bold;
 }
 
-.burger-icon {
-    font-size: 3rem;
-}
-
-#burger-checkbox {
-    display: none;
-}
-
-header .menu {
-    display: block;
-}
-
-header input:checked ~ .menu {
-    display: flex;
-}
-
-header .menu {
-    flex-direction: row;
-}
-
-header .menu a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: white;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-header .menu a:hover {
-    color: #f7c702;
-}
-
-@media (min-width: 610px) {
-
-    header nav {
-        display: flex;
-    }
-
-.burger-icon {
-        display: none;
-    }
-
-    header .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        flex: 1;
-    }
-}
 header .banner h1 {
     color: #f7c702;
     font-size: 58px;
@@ -134,12 +88,16 @@ a.button {
   padding: .7em 1.5em; 
   outline: none;
   border-radius: 20px;
+  padding-left: 32px;
 } 
+
 a.button:hover { 
     background: white;
     color: black; 
 }
-
+.navbar-collapse {
+    color: white;
+}
 
 .black-logo {
     color: black;
@@ -148,22 +106,56 @@ a.button:hover {
 h2 {
     text-align: center;
     text-transform: uppercase;
-}
-table.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-#col1, #col2, #col3, #col4 {
-    background-color: #f7c702;
-    text-align: center;
-    width: 120px;
-    min-width: 120px;
+    font-size: 34px;
     font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  background-position: 0px 0px;
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;   background-attachment: scroll;
+
+}
+.grid-item {
+  background-color: rgb(247, 199, 2);
+  border: 20px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+
 }
 .product-card {
     background-color: #3a3031;
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr);
+    grid-column: 1/4;
+    justify-content: center;
     color: white;
-    text-align: justify;
+    border: 20px solid white;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    background-position: 0px 0px 0px 0px;
+    align-items: center;
+      height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right:32px;
+  background-attachment: scroll;
+
 }
 #destinations {
     color: white;

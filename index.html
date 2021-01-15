@@ -14,18 +14,32 @@
 <body>
     <header id="home">
         <div class="content">
-            <nav>
-                <div class="logo">Terra<br>Incognita</div>
-                <label class="burger-icon" for="burger-checkbox">☰</label>
-                <input type="checkbox" id="burger-checkbox">
-                <div class="menu">
-                    <a href="#safari">Сафарі</a>
-                    <a href="#destinations">Туристичні маршрути</a>
-                    <a href="#expeditions">Незвідані простори</a>
-                    <a href="#aboutus">Про нас</a>
-                    <a href="#blog">Блог</a>
-                </div>
-            </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+              <a class="navbar-brand" href="#">Terra Incognita</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#safari">Сафарі<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#destinations">Туристичні маршрути</a>
+      </li>
+        <a class="nav-link" href="#expeditions">Незвідані простори</a>
+     <li class="nav-item">
+        <a class="nav-link" href="#aboutus">Про нас</a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="#blog">Блог</a>
+    </li>      
+     </div>
+    </div>
+</div>
+</nav>
+    </div>
             <div class="banner">
                 <h1>Поринь у незвіданний світ дикої природи</h1>
                 <p>Стань частиною величної африканської дикої природи та культури.</p>
@@ -41,23 +55,13 @@
     <main>
         <section>
             <h2>Чому саме ми?</h2>
-            <table class="center">
-                <tr>
-                    <td id="col1">Обслуговування, якого ти потребуєш<p>Ми пропонуємо індивідуальні тури до Африки, щоб
-                            залишити незабутні спогади Вам та Вашим друзям.</p>
-                    </td>
-                    <td id="col2">Висококваліфікований персонал<p>Всі наші гіди мають ліцензію та страхування на
-                            проведення екскурсій у своїй країні.</p>
-                    </td>
-                    <td id="col3">Соціальна відповідальність<p>Всі наші гіди несуть відповідальність за відвідини
-                            обраної території та людей, які знаходяться поряд з ними.</p>
-                    </td>
-                    <td id="col4">Страхування<p>Ми надаємо ліцензію ATOL та міжнародний захист пасажирів для кожної
-                            поїздки.</p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+            <div class="grid-container">
+  <div class="grid-item"><img src="img/map.svg"><b>Обслуговування, якого ти потребуєш</b><p>Ми пропонуємо індивідуальні тури до Африки, щоб залишити незабутні спогади Вам та Вашим друзям.</p></div>
+  <div class="grid-item"><img src="img/people.svg"><b>Висококваліфікований персонал</b><p>Всі наші гіди мають ліцензію та страхування на проведення екскурсій у своїй країні.</p></div>
+  <div class="grid-item"><img src="img/ok.svg"><b>Соціальна відповідальність</b><p>Всі наші гіди несуть відповідальність за відвідини обраної території та людей, які знаходяться поряд з ними.</p></div>  
+  <div class="grid-item"><img src="img/shield.svg"><b>Страхування</b><p>Ми надаємо ліцензію ATOL та міжнародний захист пасажирів для кожної
+                            поїздки.</p></div>
+                    </section>
         <section>
             <h2 id="safari">Наші найпопулярніші сафарі-тури</h2>
             <div class="product-list">
