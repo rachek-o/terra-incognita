@@ -1023,7 +1023,6 @@ h2 {
 
 .carousel {
     display: flex;
-
     height: 100%;
     justify-content: center;
     padding: auto;
@@ -1069,7 +1068,9 @@ text-decoration: none;
 }
 
 .form {
+  display: block;
   padding: 30px 40px;
+  align-items: center;
 }
 
 .form-control {
@@ -1231,22 +1232,29 @@ display: block;
 @media (max-width: 580px) {
     header .banner h1 {
     color: #f7c702;
-    font-size: 50px;
+    font-size: 48px;
     font-family: 'Rubik', sans-serif;
     }
+
+    h2 {
+        font-size: 30px;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: auto;
         grid-gap: 5px;
     }
+
 .grid-container1 {
         display: grid;
         grid-template-columns: auto;
+        grid-gap: 5px;
     }
     .grid-container2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40vh 30vh 30vh 30vh 30vh;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 'girrafe' 
     'africa'
     'mountain'
@@ -1254,9 +1262,76 @@ display: block;
     'bufallo'
     'botsvana'
     'button';
-    }
 }
 
+.grid-item2 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+ .grid-item5 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+ .grid-item6 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.grid-item8 {
+    padding-bottom: 24px;
+}
+main .information {
+    font-size: 28px;
+}
+.information .buttons {
+height: 100%;
+width: 200px;
+}
+.carousel {
+margin: 0 auto;
+overflow: auto;
+overflow-x: hidden;
+width: 100%;
+}
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+    .grid-container4 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+    .grid-container5 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+    .grid-container6 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+        .grid-container7 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+        .grid-container8 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+
+
+
+}
 @media (min-width: 660px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
